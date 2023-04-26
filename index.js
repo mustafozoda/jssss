@@ -155,25 +155,51 @@
 
 
 
-const myObj = {
-    myMethod() {
-        console.log(this);
-    }
-};
+// const myObj = {
+//     myMethod() {
+//         console.log(this);
+//     }
+// };
 
-myObj.myMethod(); // logs myObj
+// myObj.myMethod(); // logs myObj
 
-const myFunc = myObj.myMethod;
-myFunc(); // logs global object (or undefined in strict mode)
-
-
+// const myFunc = myObj.myMethod;
+// myFunc(); // logs global object (or undefined in strict mode)
 
 
 
-
-
+// const currentDate = new Date();
+// console.log(currentDate.getFullYear()); // Output: 2023
 
 
 
 
 
+// const myDate = new Date("2023-04-26T10:39:17.300Z");
+// console.log(myDate); // Output: 2023-04-26T10:39:17.300Z
+
+
+
+
+
+
+
+// const currentDate = new Date();
+
+// console.log(currentDate.getFullYear()); // Output: 2023
+// console.log(currentDate.getMonth()); // Output: 3 (April, because months are zero-based)
+// console.log(currentDate.getDate()); // Output: 26
+// console.log(currentDate.getDay()); // Output: 2 (Tuesday, because days are also zero-based)
+// console.log(currentDate.getHours()); // Output: 10
+// console.log(currentDate.getMinutes()); // Output: 52
+// console.log(currentDate.getSeconds()); // Output: 15
+// console.log(currentDate.getMilliseconds()); // Output: 487
+
+// const futureDate = new Date('2024-01-01');
+
+// console.log(futureDate.getTime()); // Output: 1672508800000 (number of milliseconds since Jan 1, 1970)
+// console.log(futureDate.toDateString()); // Output: Wed Jan 01 2024
+// console.log(futureDate.toString()); // Output: Wed Jan 01 2024 00:00:00 GMT+0800 (Taipei Standard Time)
+
+// futureDate.setMonth(6); // Set the month to July (5th month, because it's zero-based)
+// console.log(futureDate.toString()); // Output: Sun Jul 01 2024 00:00:00 GMT+0800 (Taipei Standard Time)
