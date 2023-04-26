@@ -81,18 +81,65 @@
 
 
 
-const person = {
-    name: 'John',
-    age: 30,
-    hobbies: ['reading', 'running']
-};
+// const person = {
+//     name: 'John',
+//     age: 30,
+//     hobbies: ['reading', 'running']
+// };
 
-const values = Object.values(person);
-console.log(values); // output: ['John', 30, ['reading', 'running']]
-
-
+// const values = Object.values(person);
+// console.log(values); // output: ['John', 30, ['reading', 'running']]
 
 
 
 
+// const person = {
+//     name: 'John',
+//     age: 30,
+//     hobbies: ['reading', 'running', 'cooking']
+// };
+
+
+
+
+
+
+// const { name, age } = person;
+
+
+
+
+// console.log(name); // 'John'
+// console.log(age); // 30
+
+
+
+
+
+const arr1 = [1, 2, 3];
+const arr2 = [4, 5, 6];
+
+
+
+
+const newArr = [...arr1, ...arr2];
+console.log(newArr); // [1, 2, 3, 4, 5, 6]
+
+
+
+
+const copyArr = [...arr1];
+console.log(copyArr); // [1, 2, 3]
+
+const copyObj = { ...person };
+console.log(copyObj); // { name: 'John', age: 30, hobbies: ['reading', 'running', 'cooking'] }
+
+
+
+function myFunc(arg1, arg2, arg3) {
+    console.log(arg1, arg2, arg3);
+}
+
+const arr = [1, 2, 3];
+myFunc(...arr); // 1 2 3
 
