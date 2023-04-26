@@ -116,30 +116,64 @@
 
 
 
-const arr1 = [1, 2, 3];
-const arr2 = [4, 5, 6];
+// const arr1 = [1, 2, 3];
+// const arr2 = [4, 5, 6];
 
 
 
 
-const newArr = [...arr1, ...arr2];
-console.log(newArr); // [1, 2, 3, 4, 5, 6]
+// const newArr = [...arr1, ...arr2];
+// console.log(newArr); // [1, 2, 3, 4, 5, 6]
 
 
 
 
-const copyArr = [...arr1];
-console.log(copyArr); // [1, 2, 3]
+// const copyArr = [...arr1];
+// console.log(copyArr); // [1, 2, 3]
 
-const copyObj = { ...person };
-console.log(copyObj); // { name: 'John', age: 30, hobbies: ['reading', 'running', 'cooking'] }
+// const copyObj = { ...person };
+// console.log(copyObj); // { name: 'John', age: 30, hobbies: ['reading', 'running', 'cooking'] }
 
 
 
-function myFunc(arg1, arg2, arg3) {
-    console.log(arg1, arg2, arg3);
-}
+// function myFunc(arg1, arg2, arg3) {
+//     console.log(arg1, arg2, arg3);
+// }
 
-const arr = [1, 2, 3];
-myFunc(...arr); // 1 2 3
+// const arr = [1, 2, 3];
+// myFunc(...arr); // 1 2 3
+
+
+
+
+
+
+
+
+
+
+
+
+
+const myObj = {
+    myMethod() {
+        console.log(this);
+    }
+};
+
+myObj.myMethod(); // logs myObj
+
+const myFunc = myObj.myMethod;
+myFunc(); // logs global object (or undefined in strict mode)
+
+
+
+
+
+
+
+
+
+
+
 
